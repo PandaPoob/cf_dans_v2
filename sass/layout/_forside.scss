@@ -1,0 +1,93 @@
+@use "../abstracts/vars";
+@use "../abstracts/mixins";
+
+.landing-page {
+  background-image: url(img/forside_splash.png);
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  background-size: cover;
+  background-position: 52% 10%;
+
+  @include mixins.bp-medium {
+    display: grid;
+    grid-template-columns: 3fr 2fr 2fr;
+    grid-template-rows: 6rem 1fr 1fr;
+    align-content: center;
+  }
+
+  button {
+    color: vars.$bgcolor;
+    background-color: vars.$brandcolor;
+    border: none;
+    border-radius: 3px;
+    font-family: vars.$paragraphfont;
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-align: center;
+    display: inline-block;
+    padding: 0.8rem;
+    margin-top: 1rem;
+    width: 14rem;
+    align-self: center;
+    margin-inline: auto;
+
+    @include mixins.bp-medium {
+      margin-top: 3rem;
+    }
+
+    &:hover {
+      scale: 1.1;
+      cursor: pointer;
+    }
+  }
+
+  h1 {
+    text-align: center;
+    @include mixins.bp-medium {
+      text-align: left;
+    }
+    @include mixins.bp-wide {
+      font-size: 7rem;
+    }
+  }
+
+  h3 {
+    color: vars.$secondary;
+    font-style: italic;
+    font-weight: 600;
+
+    @include mixins.bp-medium {
+      text-align: left;
+    }
+
+    @include mixins.bp-wide {
+      margin-top: -1rem;
+      margin-left: 1rem;
+    }
+  }
+}
+
+.forside-text {
+  display: grid;
+  justify-content: center;
+  align-self: center;
+  background-color: #ffffffbd;
+  padding: 1rem;
+
+  @include mixins.bp-medium {
+    margin-left: 5rem;
+    margin-bottom: 2rem;
+    grid-row: 2/3;
+  }
+}
+
+.forside-img {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+
+  img {
+    max-width: 60rem;
+  }
+}

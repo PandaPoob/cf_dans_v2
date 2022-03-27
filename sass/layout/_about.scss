@@ -1,0 +1,219 @@
+@use "../abstracts/vars";
+@use "../abstracts/mixins";
+
+#om-cf {
+  margin-inline: 1rem;
+  color: vars.$secondary;
+  @include mixins.bp-huge {
+    margin-inline: 8rem;
+  }
+}
+
+.om-intro {
+  margin-block: 2rem;
+
+  @include mixins.bp-large {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+  }
+
+  .om-intro-text {
+    @include mixins.bp-large {
+      align-self: center;
+      margin-left: 3rem;
+    }
+
+    @include mixins.bp-huge {
+      margin-left: 6rem;
+    }
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  h3 {
+    text-align: center;
+    font-style: italic;
+    font-weight: 400;
+  }
+
+  p {
+    margin-top: 2rem;
+    line-height: 2.5rem;
+  }
+
+  .om-intro-img {
+    margin-top: 3rem;
+    display: grid;
+    justify-content: center;
+  }
+
+  img {
+    border: 2px solid #d55c72;
+    max-width: 30rem;
+    padding: 0.8rem 0.8rem 4rem 0.8rem;
+  }
+}
+
+.om-erfaring {
+  margin-block: 4rem;
+
+  @include mixins.bp-large {
+    margin-top: 8rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+  }
+
+  h2 {
+    text-align: center;
+    margin-top: 2rem;
+
+    @include mixins.bp-large {
+      text-align: left;
+    }
+  }
+
+  .image {
+    margin-top: 3rem;
+    display: grid;
+    justify-content: center;
+
+    @include mixins.bp-large {
+      grid-column: 1/2;
+      grid-row: 1/2;
+    }
+  }
+
+  img {
+    border: 2px solid #d55c72;
+    max-width: 30rem;
+    padding: 0.8rem 0.8rem 4rem 0.8rem;
+  }
+}
+
+.om-udvikling {
+  margin-block: 6rem 4rem;
+
+  @include mixins.bp-large {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+  }
+
+  .text {
+    @include mixins.bp-large {
+      align-self: center;
+      margin-left: 3rem;
+    }
+  }
+  h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+
+    @include mixins.bp-large {
+      text-align: left;
+    }
+  }
+
+  .image {
+    margin-top: 3rem;
+    display: grid;
+    justify-content: center;
+  }
+
+  img {
+    border: 2px solid #d55c72;
+    max-width: 30rem;
+    padding: 0.8rem 0.8rem 4rem 0.8rem;
+  }
+}
+
+.om-idag {
+  margin-block: 6rem 4rem;
+
+  @include mixins.bp-large {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 8rem);
+  }
+
+  .text {
+    @include mixins.bp-large {
+      grid-column: 3/5;
+      grid-row: 1/2;
+      margin-top: 1rem;
+      margin-inline: 2rem 4rem;
+    }
+
+    h2 {
+      text-align: center;
+      @include mixins.bp-large {
+        text-align: left;
+      }
+    }
+  }
+
+  h2 {
+    margin-top: 2rem;
+  }
+
+  #img1 {
+    display: grid;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    @include mixins.bp-large {
+      grid-column: 1/2;
+      grid-row: 3/2;
+    }
+  }
+
+  #img2 {
+    display: grid;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+    @include mixins.bp-large {
+      grid-column: 2/3;
+      grid-row: 1/2;
+      margin-left: -2rem;
+      margin-right: 2rem;
+    }
+  }
+
+  .image {
+    margin-top: 3rem;
+  }
+
+  img {
+    border: 2px solid #d55c72;
+    max-width: 30rem;
+    padding: 0.8rem 0.8rem 4rem 0.8rem;
+    background-color: vars.$bgcolor;
+  }
+
+  .text-mantra {
+    margin-top: 2rem;
+    display: grid;
+    justify-content: center;
+    margin-left: 2rem;
+
+    @include mixins.bp-large {
+      grid-column: 3/5;
+      grid-row: 3/4;
+      display: grid;
+      justify-content: left;
+      margin-top: 1rem;
+    }
+
+    li {
+      font-family: vars.$paragraphfont;
+      line-height: 3rem;
+      font-size: 1.3rem;
+      font-style: italic;
+    }
+  }
+}
