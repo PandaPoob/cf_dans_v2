@@ -9,7 +9,7 @@ module.exports = {
         dansetimer: resolve(__dirname, "dansetimer.html"),
         book: resolve(__dirname, "book.html"),
         about: resolve(__dirname, "about.html"),
-        kontakt: resolve(__dirname, "kontakt.html"),
+        kontakt: resolve(__dirname, "kontakt_mig.html"),
       },
     },
   },
