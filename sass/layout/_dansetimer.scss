@@ -90,26 +90,47 @@
 }
 
 .dansetimer-second-section {
-  margin: 5rem 1rem 5rem 1rem;
-  color: vars.$secondary;
+  margin: 8rem 1rem 5rem 1rem;
 
   @include mixins.bp-huge {
     margin-inline: 8rem;
   }
 
-  #container {
-    margin-top: 3rem;
-
+  .lokale {
+    color: vars.$brandcolor;
     @include mixins.bp-medium {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 2rem;
-    }
-
-    @include mixins.bp-huge {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
       gap: 1rem;
+      justify-items: center;
+    }
+  }
+
+  .lokale-tekst {
+    margin-bottom: 2rem;
+    color: vars.$brandcolor;
+    @include mixins.bp-medium {
+      grid-column: 1/3;
+    }
+  }
+
+  .kommer-snart {
+    color: vars.$secondary;
+    margin-top: 1rem;
+    @include mixins.bp-medium {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      justify-items: center;
+    }
+  }
+
+  .kommer-snart-tekst {
+    color: vars.$secondary;
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+    @include mixins.bp-medium {
+      grid-column: 1/3;
     }
   }
 
@@ -117,6 +138,11 @@
     border: 2px solid vars.$secondary;
     margin-bottom: 1rem;
     padding: 1rem 2rem 1rem 2rem;
+
+    @include mixins.bp-medium {
+      max-width: 35rem;
+      min-height: 28rem;
+    }
 
     p {
       line-height: 2.5rem;
