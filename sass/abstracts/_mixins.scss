@@ -1,3 +1,5 @@
+@use "../abstracts/vars";
+
 @mixin bp-medium {
   @media only screen and (min-width: 760px) {
     @content;
@@ -20,4 +22,67 @@
   @media only screen and (min-width: 1500px) {
     @content;
   }
+}
+
+@mixin h1 {
+  font-family: vars.$displayfont;
+  font-size: 2rem;
+  color: vars.$secondary;
+
+  @include bp-medium {
+    font-size: 2.5rem;
+  }
+}
+
+@mixin h2 {
+  font-family: vars.$displayfont;
+  font-size: 1.5rem;
+  color: vars.$secondary;
+
+  @include bp-medium {
+    font-size: 2rem;
+  }
+}
+
+@mixin h3 {
+  font-family: vars.$displayfont;
+  font-size: 1.125rem;
+  color: vars.$secondary;
+  font-weight: 400;
+
+  @include bp-medium {
+    font-size: 1.5rem;
+  }
+}
+
+@mixin h4 {
+  font-family: vars.$paragraphfont;
+  font-size: 0.875rem;
+  color: vars.$secondary;
+
+  @include bp-medium {
+    font-size: 1.125rem;
+  }
+}
+
+@mixin p {
+  font-family: vars.$paragraphfont;
+  line-height: 2.5rem;
+  font-size: 0.75rem;
+  color: vars.$secondary;
+
+  @include bp-medium {
+    font-size: 0.875rem;
+  }
+}
+
+@mixin primary-button {
+  font-family: vars.$paragraphfont;
+  font-size: 0.875rem;
+  text-align: center;
+  color: white;
+  background-color: vars.$brandcolor;
+  display: inline-block;
+  border-radius: 2px;
+  padding-block: 0.625rem;
 }
