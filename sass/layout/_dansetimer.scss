@@ -100,8 +100,8 @@
     color: vars.$brandcolor;
     @include mixins.bp-medium {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 1rem;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 5rem;
       justify-items: center;
     }
   }
