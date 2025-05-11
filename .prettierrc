@@ -1,0 +1,17 @@
+{
+    "overrides": [
+      {
+        "files": "*.astro",
+        "options": {
+          "parser": "astro"
+        }
+      },
+      {
+        "files": ["*.js", "*.jsx", "*.ts", "*.tsx"],
+        "options": {
+          "singleQuote": false,
+          "semi": true
+        }
+      }
+    ]
+  }

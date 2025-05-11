@@ -5,6 +5,7 @@ import "@fontsource/open-sans";
 import { Image } from "astro:assets";
 const { title, location } = Astro.props;
 import Logo from "../../public/favicon.svg";
+import MobileMenu from "./MobileMenu";
 ---
 
 <!doctype html>
@@ -17,10 +18,10 @@ import Logo from "../../public/favicon.svg";
     <title>{title ? title : "CF Dans"}</title>
   </head>
   <body class="text-secondary font-body">
-    <header class="bg-white shadow p-3">
-      <nav class="w-full flex justify-between">
+    <header class="relative bg-primary shadow p-3">
+      <nav class="w-full flex justify-between items-center">
         <a href="/" class="w-8"><Image src={Logo} alt="logo" /></a>
-        <ul class="flex gap-12 py-2 items-center">
+        <ul class="gap-12 py-2 items-center hidden md:flex">
           <li>
             <a
               href="/tilmelding"
@@ -57,6 +58,7 @@ import Logo from "../../public/favicon.svg";
             >
           </li>
         </ul>
+          <MobileMenu client:load/>
       </nav>
     </header>
     <main>
