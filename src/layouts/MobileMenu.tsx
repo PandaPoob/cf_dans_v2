@@ -4,7 +4,7 @@ function MobileMenu() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="md:hidden flex justify-center items-center">
+    <div className="md:hidden flex justify-center items-center font-alt">
       {isOpen ? (
         <button onClick={() => setIsOpen(!isOpen)} className="">
           <svg

@@ -2,6 +2,7 @@
 import "../styles/global.css";
 import "@fontsource/encode-sans";
 import "@fontsource/open-sans";
+import "@fontsource-variable/roboto";
 import { Image } from "astro:assets";
 const { title, location } = Astro.props;
 import Logo from "../../public/favicon.svg";
@@ -21,7 +22,7 @@ import MobileMenu from "./MobileMenu";
     <header class="relative bg-primary shadow p-3">
       <nav class="w-full flex justify-between items-center">
         <a href="/" class="w-8"><Image src={Logo} alt="logo" /></a>
-        <ul class="gap-12 py-2 items-center hidden md:flex">
+        <ul class="gap-12 py-2 items-center hidden md:flex font-alt">
           <li>
             <a
               href="/tilmelding"
@@ -58,7 +59,7 @@ import MobileMenu from "./MobileMenu";
             >
           </li>
         </ul>
-          <MobileMenu client:load/>
+        <MobileMenu client:load />
       </nav>
     </header>
     <main>

@@ -1,18 +1,19 @@
 @import "tailwindcss";
 
 @theme {
-/* 
+  /* 
 --breakpoint-sm:  40rem (640px)	
 --breakpoint-md:  48rem (768px)	
 --breakpoint-lg:  64rem (1024px)
 --breakpoint-xl:  80rem (1280px)	
 --breakpoint-xxl: 96rem (1536px)	
 */
-  --font-display: "Encode Sans", "sans-serif"; 
-  --font-body: "Open Sans", "sans-serif"; 
+  --font-display: "Encode Sans", "sans-serif";
+  --font-body: "Open Sans", "sans-serif";
+  --font-alt: "Roboto Variable", "sans-serif";
 
-  --color-primary: #FFF6F6;
-  --color-secondary: #1B0000;
-  --color-accent: #D55C73;
-  }
-
+  --color-primary: #fff6f6;
+  --color-secondary: #1b0000;
+  --color-accent: #e25973;
+  --color-accent-dark: #d55c73;
+}
