@@ -1,8 +1,91 @@
 ---
 import Welcome from "../components/Welcome.astro";
+import HomePage from "../components/Home/HomePage.astro";
 import Layout from "../layouts/Layout.astro";
+import heroBg from "../assets/splash.png";
+import ButtonLink from "~/components/shared/ButtonLink";
+import Headphones from "~/assets/headphones.svg";
+import Music from "~/assets/music.svg";
+import Group from "~/assets/group.svg";
+import Sprout from "~/assets/sprout.svg";
 ---
 
 <Layout title="CF Dans" location="/">
-  <Welcome />
+  <section class="relative h-screen md:h-[80vh]">
+    <img
+      src={heroBg.src}
+      alt="Dans dig glad"
+      class="w-full h-screen object-cover object-[45%_10%] md:object-[45%_35%] md:h-[84%]"
+      fetchpriority="high"
+    />
+    <div
+      class="absolute inset-0 flex items-center justify-center md:relative md:h-[32%] md:bg-primary"
+    >
+      <div class="bg-white/80 text-center w-full py-8 px-2 md:bg-primary">
+        <h1 class="text-lg mb-2 font-display md:text-2xl">CF Dans</h1>
+        <p class="text-xl sm:text-2xl font-display md:text-4xl">
+          Danseglæde med Charlotte Frølund
+        </p>
+        <div class="flex justify-center mt-4">
+          <ButtonLink client:load label="Dans med" url="/dansehold" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="py-20 px-4">
+    <h2 class="font-display text-2xl text-center mb-10 md:text-3xl">
+      Ikke "bare" dans
+    </h2>
+    <div class="grid gap-10">
+      <div>
+        <div class="flex items-center gap-3 mb-4">
+          <Headphones />
+          <h3 class="text-lg">Befrielse</h3>
+        </div>
+        <p>
+          Når vi danser er vores største fokuspunkt friheden. Både til kroppen
+          gennem bevægelse men også til sindet ved at “give slip” på alle
+          tankerne og bare nyde musikken og føle rytmen. Her er der plads til
+          hele dig i sikre omgivelser.
+        </p>
+      </div>
+      <div>
+        <div class="flex items-center gap-3 mb-4">
+          <Music />
+          <h3 class="text-lg">Passion</h3>
+        </div>
+        <p>
+          Charlotte Frølund, som underviser til timerne, elsker det som dans
+          giver og har danset hele sit liv. Dette kan i den grad mærkes og
+          glæden og kærligheden til bevægelsen og musikken smitter. Denne
+          danseglæde kan du næsten ikke undgå at tage med hjem.
+        </p>
+      </div>
+      <div>
+        <div class="flex items-center gap-3 mb-4">
+          <Group />
+          <h3 class="text-lg">Omfavnende</h3>
+        </div>
+        <p>
+          Hos CF Dans kan du ikke være for meget eller for lidt, for du er lige
+          præcis, som du skal være. Du kan ikke danse forkert så længe du danser
+          med, da vi danser for at have det sjovt og for at slippe kroppen løs.
+        </p>
+      </div>
+      <div>
+        <div class="flex items-center gap-3 mb-4">
+          <Sprout />
+          <h3 class="text-lg">Styrke</h3>
+        </div>
+        <p>
+          Ved at have fokus på frirummet og trykke omgivelser håber CF Dans at
+          du for alvor kan mærke din styrke, for at danse er også en måde at
+          mærke sig selv på. Både din krops styrke, når du bevæger dig, men også
+          sindets, når du er dig selv.
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- <HomePage/> -->
+  <!-- <Welcome /> -->
 </Layout>

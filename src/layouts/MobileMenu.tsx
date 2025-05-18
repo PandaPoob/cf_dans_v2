@@ -46,7 +46,7 @@ function MobileMenu() {
         </button>
       )}
       <div
-        className={`overflow-hidden absolute left-0 top-full w-full bg-primary transition-all duration-300 ease-in-out ${isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"}`}
+        className={`overflow-hidden absolute left-0 top-full w-screen z-10 -mt-1 bg-primary transition-all duration-300 ease-in-out ${isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"}`}
       >
         <ul className="grid justify-center text-center gap-5 py-5">
           <li>
@@ -66,27 +66,6 @@ function MobileMenu() {
           </li>
         </ul>
       </div>
-      {/*       {isOpen && (
-        <div className="absolute top-17 left-0 bg-primary w-full pb-5">
-          <ul className="grid justify-center text-center gap-5">
-            <li>
-              <a href="/tilmelding">Tilmelding</a>
-            </li>
-            <li>
-              <a href="/dansehold">Dansehold</a>
-            </li>
-            <li>
-              <a href="/eventbooking">Event booking</a>
-            </li>
-            <li>
-              <a href="/omcfdans">Om CF Dans</a>
-            </li>
-            <li>
-              <a href="/kontakt">Kontakt mig</a>
-            </li>
-          </ul>
-        </div>
-      )} */}
     </div>
   );
 }
