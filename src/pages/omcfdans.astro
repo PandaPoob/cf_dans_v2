@@ -1,7 +1,177 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import about_1 from "~/assets/about_1.png";
+import about_2 from "~/assets/about_2.png";
+import about_3 from "~/assets/about_3.png";
+import about_4 from "~/assets/about_4.png";
+import about_5 from "~/assets/about_5.png";
 ---
 
 <Layout title="CF Dans - Om CF Dans" location="/omcfdans">
-  <h1>Om CF Dans</h1>
+  <section
+    class="flex justify-center items-center flex-wrap gap-8 px-4 py-16 md:min-h-screen md:-mt-10"
+  >
+    <div class="md:w-1/3 md:flex md:flex-col md:items-center md:mb-20">
+      <h1 class="text-5xl font-display md:text-center mb-2">
+        Charlotte Frølund
+      </h1>
+      <h2 class="text-lg italic md:text-center mb-4">
+        dansecoach - instruktør - feststarter
+      </h2>
+      <p class="max-w-[74ch]">
+        Jeg er danseinstruktør med over 30 års erfaring og stifter og ejer af CF
+        Dans siden 1992. Min passion for dans og undervisning driver mig til at
+        formidle glæden ved bevægelse til alle, der ønsker at opleve danseglæden
+        og tage del i fællesskabet.
+      </p>
+    </div>
+    <div class="p-5 pb-16 bg-white border border-primary drop-shadow-lg">
+      <img
+        src={about_1.src}
+        alt="Charlotte Frølund danser udenfor på en grøn græsplæne på en solrig dag."
+      />
+    </div>
+  </section>
+
+  <section class="flex justify-center flex-wrap bg-primary px-4 py-16">
+    <div>
+      <h2 class="font-display text-2xl text-center mb-5 md:mb-14 md:text-3xl">
+        Min erfaring
+      </h2>
+      <p class="mb-5">
+        Jeg startede selv med at gå til dans på en danseskole, da jeg var 4 år
+        gammel og siden er jeg ikke stoppet med danse. Da jeg blev teenager
+        begyndte jeg at være hjælpetræner og allerede som 17 årig havde jeg mine
+        egne hold.
+      </p>
+      <p class="mb-5">
+        Jeg har undervist i Jazzdance, Showdance, Jitterbug, Rockn-roll,
+        HipHop/Funk og standard/latin-dance. Jeg har haft elever med til mange
+        konkurrencer både i Danmark og i udlandet.
+      </p>
+      <p class="mb-5">
+        Jeg har undervist i Showdance, hvor jeg har sat mange forskellige
+        danseshows op. Her vægtede min undervisning meget på en masse
+        koreograferet danse og at alle skulle gøre det ens, stå på lige linjer,
+        og kunne alt til punkt og prikke, da vi både turnerede og gav opvisning
+        i vores dans.
+      </p>
+    </div>
+    <div class="p-5 pb-16 bg-white border border-primary drop-shadow-lg">
+      <img
+        src={about_2.src}
+        alt="Charlotte Frølund træner balance i en indendørs gymnastiksal."
+      />
+    </div>
+  </section>
+
+  <section class="flex justify-center flex-wrap gap-8 px-4 py-16">
+    <div>
+      <h2 class="font-display text-2xl text-center mb-5 md:mb-14 md:text-3xl">
+        Min udvikling
+      </h2>
+      <p>
+        Med årene ville jeg hellere undervise i danseglæde og give min glæde ved
+        dansen videre til andre. Jeg ville lægge mindre vægt på perfektionisme,
+        og istedet give min viden omkring vigtigheden af bevægelse i dansen
+        videre til alle der vil tage imod den. Derfor underviser jeg i glæden
+        ved dans, og at finde sig selv i dansen via danseglæde og musikken på
+        mine hold "Dans dig Glad" og Hitfitdance og Zumba og Groove.
+      </p>
+    </div>
+    <div class="p-5 pb-16 bg-white border border-primary drop-shadow-lg">
+      <img
+        src={about_3.src}
+        alt="Charlotte Frølund danser på sandet ved en strand med blå bølger der skvulper."
+      />
+    </div>
+  </section>
+
+  <section class="flex justify-center flex-wrap gap-8 px-4 py-8">
+    <div>
+      <h2 class="font-display text-2xl text-center mb-5 md:mb-14 md:text-3xl">
+        Min undervisning i dag
+      </h2>
+      <p>
+        Jeg underviser altid med et smil på læben og favner alle dem der kommer
+        på mine timer. Jeg har stort fokus på at man ikke kan gøre noget forkert
+        og at man skal slippe kroppen løs i et sikre omgivelser.
+      </p>
+    </div>
+    <div>
+      <div class="p-5 pb-16 bg-white border border-primary drop-shadow-lg mb-5">
+        <img
+          src={about_4.src}
+          alt="Charlotte Frølund underviser på grøn græsplæne med armen løftet højt for at motivere sine dansere."
+        />
+      </div>
+      <div class="p-5 pb-16 bg-white border border-primary drop-shadow-lg">
+        <img
+          src={about_5.src}
+          alt="Charlotte Frølund danser frit og groover til musikken."
+        />
+      </div>
+    </div>
+  </section>
+
+  <section
+    class="flex justify-center items-center flex-wrap gap-8 px-4 py-16 mb-10"
+  >
+    <div
+      class="bg-primary flex flex-col justify-center items-center rounded-3xl px-4 py-8 drop-shadow-lg max-w-96 min-h-80"
+    >
+      <h3 class="font-display text-2xl text-center mb-3 md:mb-5 md:text-3xl">
+        Dansetimer
+      </h3>
+      <p class="mb-6">
+        Uanset om du er nybegynder eller har danset før, er der plads til dig
+        her. Mine timer er fyldt med energi, musik og masser af bevægelsesglæde.
+        Kom og mærk hvad dans kan gøre for både krop og sind.
+      </p>
+      <a
+        class="text-accent flex items-center justify-center rounded-xs w-auto py-2 px-6 text-sm font-alt font-medium border border-accent min-w-32 transition-colors duration-200 hover:bg-accent hover:text-white"
+        href={"/dansetimer"}
+      >
+        Læs mere
+      </a>
+    </div>
+
+    <div
+      class="bg-primary flex flex-col justify-center items-center rounded-3xl px-4 py-8 drop-shadow-lg max-w-96 min-h-80"
+    >
+      <h3 class="font-display text-2xl text-center mb-3 md:mb-5 md:text-3xl">
+        Gratis prøvetime
+      </h3>
+      <p class="mb-6">
+        Er du nysgerrig? <br /> Kom til en gratis og uforpligtende prøvetime, hvor
+        du kan mærke stemningen, mærke hvordan det føles at give slip, og bare nyde
+        musikken.
+      </p>
+      <a
+        class="bg-accent text-primary flex items-center justify-center rounded-xs w-auto py-2 px-6 text-sm font-alt font-medium min-w-32 transition-colors duration-200 border hover:bg-primary hover:text-accent hover:border-accent"
+        href={"/dansetimer"}
+      >
+        Start nu
+      </a>
+    </div>
+
+    <div
+      class="bg-primary flex flex-col justify-center items-center rounded-3xl px-4 py-8 drop-shadow-lg max-w-96 min-h-80"
+    >
+      <h3 class="font-display text-2xl text-center mb-3 md:mb-5 md:text-3xl">
+        Kontakt mig
+      </h3>
+      <p class="mb-6">
+        Har du spørgsmål, eller ønsker du at booke dans til et arrangement,
+        event eller noget helt tredje? Så er du altid velkommen til at tage
+        kontakt.
+      </p>
+      <a
+        class="text-accent flex items-center justify-center rounded-xs w-auto py-2 px-6 text-sm font-alt font-medium border border-accent min-w-32 transition-colors duration-200 hover:bg-accent hover:text-white"
+        href={"/kontakt"}
+      >
+        Skriv til mig
+      </a>
+    </div>
+  </section>
 </Layout>
