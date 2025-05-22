@@ -1,7 +1,14 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import splash from "~/assets/contact_splash.png";
 ---
 
 <Layout title="CF Dans - Kontakt" location="/kontakt">
-  <h1>Kontakt</h1>
+  <section class="relative h-screen">
+    <img
+      src={splash.src}
+      alt="Kontakt CF Dans"
+      class="w-full h-screen object-cover object-[48%_10%] md:object-[45%_0%]"
+    />
+  </section>
 </Layout>
