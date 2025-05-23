@@ -33,9 +33,13 @@ import about_5 from "~/assets/about_5.png";
     </div>
   </section>
 
-  <section class="flex justify-center flex-wrap bg-primary px-4 py-16">
-    <div>
-      <h2 class="font-display text-2xl text-center mb-5 md:mb-14 md:text-3xl">
+  <section
+    class="flex justify-center flex-wrap bg-primary px-4 py-16 md:flex-row-reverse md:gap-10"
+  >
+    <div class="md:w-1/3">
+      <h2
+        class="font-display text-2xl text-center mb-5 md:mb-6 md:text-3xl md:text-left"
+      >
         Min erfaring
       </h2>
       <p class="mb-5">
@@ -65,9 +69,13 @@ import about_5 from "~/assets/about_5.png";
     </div>
   </section>
 
-  <section class="flex justify-center flex-wrap gap-8 px-4 py-16">
-    <div>
-      <h2 class="font-display text-2xl text-center mb-5 md:mb-14 md:text-3xl">
+  <section
+    class="flex justify-center flex-wrap gap-8 px-4 py-16 md:items-center"
+  >
+    <div class="md:w-1/3">
+      <h2
+        class="font-display text-2xl text-center mb-5 md:mb-6 md:text-3xl md:text-left"
+      >
         Min udvikling
       </h2>
       <p>
@@ -87,9 +95,13 @@ import about_5 from "~/assets/about_5.png";
     </div>
   </section>
 
-  <section class="flex justify-center flex-wrap gap-8 px-4 py-8">
-    <div>
-      <h2 class="font-display text-2xl text-center mb-5 md:mb-14 md:text-3xl">
+  <section
+    class="flex justify-center flex-wrap gap-8 bg-primary px-4 py-16 md:flex-row-reverse md:items-start"
+  >
+    <div class="md:w-1/3 md:mt-24">
+      <h2
+        class="font-display text-2xl text-center mb-5 md:mb-6 md:text-3xl md:text-left"
+      >
         Min undervisning i dag
       </h2>
       <p>
@@ -98,24 +110,26 @@ import about_5 from "~/assets/about_5.png";
         og at man skal slippe kroppen løs i et sikre omgivelser.
       </p>
     </div>
-    <div>
-      <div class="p-5 pb-16 bg-white border border-primary drop-shadow-lg mb-5">
-        <img
-          src={about_4.src}
-          alt="Charlotte Frølund underviser på grøn græsplæne med armen løftet højt for at motivere sine dansere."
-        />
-      </div>
-      <div class="p-5 pb-16 bg-white border border-primary drop-shadow-lg">
-        <img
-          src={about_5.src}
-          alt="Charlotte Frølund danser frit og groover til musikken."
-        />
-      </div>
+    <div
+      class="p-5 pb-16 bg-white border border-primary drop-shadow-lg mb-5 z-10 md:-ml-20"
+    >
+      <img
+        src={about_4.src}
+        alt="Charlotte Frølund underviser på grøn græsplæne med armen løftet højt for at motivere sine dansere."
+      />
+    </div>
+    <div
+      class="p-5 pb-16 bg-white border border-primary drop-shadow-lg md:mt-24"
+    >
+      <img
+        src={about_5.src}
+        alt="Charlotte Frølund danser frit og groover til musikken."
+      />
     </div>
   </section>
 
   <section
-    class="flex justify-center items-center flex-wrap gap-8 px-4 py-16 mb-10"
+    class="flex justify-center items-center flex-wrap gap-8 px-4 py-16 mb-10 md:py-28"
   >
     <div
       class="bg-primary flex flex-col justify-center items-center rounded-3xl px-4 py-8 drop-shadow-lg max-w-96 min-h-80"
