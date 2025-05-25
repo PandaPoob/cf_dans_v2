@@ -4,29 +4,102 @@ import splash from "~/assets/contact_splash.png";
 ---
 
 <Layout title="CF Dans - Kontakt" location="/kontakt">
-  <section class="relative h-screen">
+  <section class="relative h-[40vh] md:h-[60vh]">
     <img
       src={splash.src}
       alt="Kontakt CF Dans"
-      class="w-full h-screen object-cover object-[48%_10%] md:object-[45%_0%]"
+      class="w-full h-[40vh] object-cover object-[50%_80%] md:h-[60vh] md:object-[45%_60%]"
     />
+    <h1
+      class="absolute bottom-1/2 text-center text-2xl font-display md:text-4xl md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2"
+    >
+      Du kan altid kontakte mig hvis du har nogen spørgsmål
+    </h1>
   </section>
 
-  <form name="contact" method="POST" data-netlify="true" onsubmit="onsubmit">
-    <div>
-      <label for="email">Din email </label>
-      <input type="text" name="email" />
-    </div>
+  <section class="px-4 pb-20">
+    <div
+      class="bg-primary px-6 py-10 rounded-xs drop-shadow-lg -mt-20 md:-mt-40 max-w-2xl m-auto"
+    >
+      <form
+        class="grid"
+        name="contact"
+        method="POST"
+        data-netlify="true"
+        onsubmit="onsubmit"
+      >
+        <div class="md:grid md:grid-cols-2 md:gap-6 md:mb-4">
+          <div class="grid mb-5">
+            <label for="email" class="text-sm mb-2">Din e-mailadresse</label>
+            <input
+              class=`bg-white border border-gray-400 p-2 focus:outline-0 focus:border-secondary`
+              id="email"
+              type="email"
+              name="email"
+              required
+            />
+          </div>
 
-    <div>
-      <label for="subject">Emne </label>
-      <input type="text" name="subject" />
-    </div>
-    <div>
-      <label for="bodyText">Hvad vil du gerne spørge om?</label>
-      <textarea name="bodyText"></textarea>
-    </div>
+          <div class="grid mb-5">
+            <label for="subject" class="text-sm mb-2">Emne</label>
+            <input
+              class="bg-white border border-gray-400 p-2 focus:outline-0 focus:border-secondary"
+              id="subject"
+              type="text"
+              name="subject"
+              required
+            />
+          </div>
+        </div>
 
-    <button type="submit">Send</button>
-  </form>
+        <div class="grid mb-5 md:mb-9">
+          <label for="besked" class="text-sm mb-2"
+            >Hvad vil du gerne spørge om?</label
+          >
+          <textarea
+            class="bg-white border border-gray-400 p-2 focus:outline-0 focus:border-secondary resize-none min-h-24"
+            id="besked"
+            name="besked"
+            required></textarea>
+        </div>
+
+        <button
+          class="bg-accent border border-accent text-white text-center p-2 transition-colors duration-200 hover:bg-accent-dark cursor-pointer focus:border-secondary focus:outline-0"
+          type="submit">Send</button
+        >
+      </form>
+    </div>
+  </section>
 </Layout>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const emailElement = document.getElementById("email");
+    const subjectElement = document.getElementById("subject");
+    const beskedElement = document.getElementById("besked");
+
+    if (emailElement) {
+      handleValidationInputStyles(emailElement);
+    }
+
+    if (subjectElement) {
+      handleValidationInputStyles(subjectElement);
+    }
+
+    if (beskedElement) {
+      handleValidationInputStyles(beskedElement);
+    }
+
+    function handleValidationInputStyles(element: HTMLElement) {
+      const input = element as HTMLInputElement;
+
+      input.addEventListener("blur", () => {
+        if (!input.checkValidity()) {
+          input.classList.add("border-red-500");
+        } else {
+          input.classList.remove("border-red-500");
+        }
+      });
+    }
+  });
+</script>
