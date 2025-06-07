@@ -50,10 +50,7 @@ function MobileMenu() {
       >
         <ul className="grid justify-center text-center gap-5 py-5">
           <li>
-            <a href="/tilmelding">Tilmelding</a>
-          </li>
-          <li>
-            <a href="/dansehold">Dansehold</a>
+            <a href="/dans-og-tilmelding">Dans & Tilmelding</a>
           </li>
           <li>
             <a href="/eventbooking">Event booking</a>
