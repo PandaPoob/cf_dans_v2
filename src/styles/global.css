@@ -16,4 +16,15 @@
   --color-secondary: #1b0000;
   --color-accent: #e25973;
   --color-accent-dark: #d55c73;
+
+  --animate-marquee: marquee 20s linear infinite;
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
 }

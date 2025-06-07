@@ -1,7 +1,160 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import splash_1 from "~/assets/event_splash.png";
+import event_1 from "~/assets/event_1.png";
+import event_splash_2 from "~/assets/event_splash_2.png";
 ---
 
 <Layout title="CF Dans - Event booking" location="/eventbooking">
-  <h1>Event booking</h1>
+  <section class="relative h-[calc(100vh-4.5rem)] md:h-[76vh]">
+    <div class="h-[88%] flex justify-center">
+      <img
+        src={splash_1.src}
+        alt="Dans dig glad"
+        class="w-full h-full object-cover object-[30%_10%] md:object-[45%_60%]"
+        fetchpriority="high"
+      />
+      <div class="absolute top-[30%] px-4">
+        <h1 class="text-2xl text-center mb-4 md:text-4xl">Event booking</h1>
+        <p class="max-w-[74ch]">
+          Udover mine faste undervisningstimer arrangerer jeg også
+          danseoplevelser til både små og store begivenheder. Hver event
+          tilpasses deltagerne og stemningen – med fokus på bevægelse, grin og
+          fælles energi.
+        </p>
+      </div>
+    </div>
+    <div class="h-[12%] bg-white flex items-center overflow-hidden relative">
+      <div
+        class="flex animate-[var(--animate-marquee)] [--animate-marquee:marquee_20s_linear_infinite] md:[--animate-marquee:marquee_40s_linear_infinite] w-max"
+      >
+        <ul
+          class="flex whitespace-nowrap gap-8 font-display text-lg italic md:text-xl md:gap-40"
+        >
+          <li class="ml-8 md:ml-40">
+            Firmafester <span class="ml-8 md:ml-40">-</span>
+          </li>
+          <li>Polterabend <span class="ml-8 md:ml-40">-</span></li>
+          <li>Fødselsdage <span class="ml-8 md:ml-40">-</span></li>
+          <li>Bryllupper <span class="ml-8 md:ml-40">-</span></li>
+          <li>Fester <span class="ml-8 md:ml-40">-</span></li>
+          <li>Konfirmationer <span class="ml-8 md:ml-40">-</span></li>
+        </ul>
+        <ul
+          class="flex whitespace-nowrap gap-8 font-display text-lg italic md:text-xl md:gap-40"
+        >
+          <li class="ml-8 md:ml-40">
+            Firmafester <span class="ml-8 md:ml-40">-</span>
+          </li>
+          <li>Polterabend <span class="ml-8 md:ml-40">-</span></li>
+          <li>Fødselsdage <span class="ml-8 md:ml-40">-</span></li>
+          <li>Bryllupper <span class="ml-8 md:ml-40">-</span></li>
+          <li>Fester <span class="ml-8 md:ml-40">-</span></li>
+          <li>Konfirmationer <span class="ml-8 md:ml-40">-</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section
+    class="bg-primary px-4 py-16 md:flex md:flex-row-reverse md:gap-10 md:justify-center md:py-40"
+  >
+    <div>
+      <h2 class="font-display text-2xl mb-5 md:mb-6 md:text-3xl md:text-left">
+        Undervisning i brudevals
+      </h2>
+      <p class="mb-5 max-w-[74ch]">
+        Skal I giftes og har brug for hjælp til brudevalsen, står jeg klar til
+        at guide jer trygt gennem trinene. Om I ønsker en enkelt time eller
+        flere, tilpasser vi sammen undervisningen efter jeres behov og ønsker.
+        Drømmer I om en brudevals med et utraditionelt twist eller personlig
+        stil, hjælper jeg jer med at gøre dansen både smuk og unik. Hos mig får
+        I ikke blot teknikken på plads – I får også tid og rum til at finde
+        roen, møde hinanden i øjnene og genfinde kærligheden, inden den store
+        dag.
+      </p>
+    </div>
+    <img
+      src={event_1.src}
+      alt="Et brudepar som danser tæt med hinanden i armene."
+    />
+  </section>
+
+  <section class="px-4 py-16 md:py-40 md:grid md:justify-center">
+    <h2 class="font-display text-2xl mb-5 md:mb-6 md:text-3xl md:text-left">
+      Polterabend med et uforglemmeligt dansetwist
+    </h2>
+    <p class="max-w-[74ch]">
+      En dansetime til polterabend er altid et kæmpe hit – det skaber masser af
+      grin, glæde og sved på panden, samtidig med at det samler gæsterne og
+      sætter den kommende brud eller brudgom i centrum. Inden selve dagen tager
+      jeg gerne en snak med jer, der arrangerer, for at høre lidt om
+      hovedpersonen og stemningen I ønsker. Ud fra det skræddersyr jeg en sjov
+      og tilpasset dansetime, der matcher både deltagerne og jeres idéer. Har I
+      specifikke ønsker eller idéer til dansestilen, temaet eller et
+      yndlingsnummer? Så er I selvfølgelig altid velkomne til at dele dem med
+      mig!
+    </p>
+  </section>
+
+  <section
+    class="bg-primary px-4 py-16 flex flex-wrap gap-10 md:py-40 md:justify-evenly"
+  >
+    <div class="">
+      <h2 class="font-display text-2xl mb-5 md:mb-6 md:text-3xl md:text-left">
+        Få alle op af stolen til firmafesten
+      </h2>
+      <p class="max-w-[74ch]">
+        Til en firmafest eller konference kan et danseindslag være den perfekte
+        måde at skabe fællesskab, grin og god stemning blandt medarbejderne. I
+        samarbejde med jeres festudvalg sammensætter jeg et danseprogram, der
+        passer til både deltagerne og anledningen – uanset niveau og erfaring.
+        Målet er at alle får en sjov og energifyldt oplevelse, hvor ingen kan
+        danse "forkert", så længe de er med.
+      </p>
+    </div>
+
+    <div class="">
+      <h2 class="font-display text-2xl mb-5 md:mb-6 md:text-3xl md:text-left">
+        Få festen i gang med dans
+      </h2>
+      <p class="max-w-[74ch]">
+        Til fødselsdage og andre store fejringer er et danseindslag en oplagt
+        måde at løfte stemningen og få gæsterne op af stolene. Det skaber smil,
+        latter og en livlig energi – og er en fantastisk icebreaker, især hvis
+        ikke alle gæster kender hinanden. Sammen planlægger vi et danseprogram,
+        der passer perfekt til netop din fest. Det kan tage udgangspunkt i en
+        sang du holder af, et bestemt tema – eller bare ønsket om at få hele
+        selskabet ud på gulvet og i godt humør.
+      </p>
+    </div>
+  </section>
+
+  <section class="relative h-[60vh] md:h-[80vh]">
+    <img
+      src={event_splash_2.src}
+      alt="Lyskæder og guirlander hænger fra et træloft"
+      class="w-full h-full object-cover object-[90%_10%] md:object-[45%_60%]"
+    />
+    <div
+      class="absolute top-0 h-full flex flex-col justify-center px-4 md:w-full md:items-center"
+    >
+      <h2 class="font-display text-2xl mb-5 md:mb-6 md:text-3xl text-left">
+        Skab minder, der danser med tiden
+      </h2>
+      <p class="max-w-[74ch]">
+        Har du et arrangement, som ikke er nævnt ovenfor, men hvor du godt kan
+        forestille dig, at min danseundervisning kunne gøre en forskel? Uanset
+        om I er øvede dansere eller bare vil have det sjovt, skaber jeg en tryg
+        og festlig ramme, hvor alle kan være med. Hvis du vil gøre din
+        begivenhed helt særlig, så tøv ikke med at kontakte mig her.
+      </p>
+      <a
+        class="bg-accent text-primary flex items-center justify-center rounded-xs w-auto py-2 px-6 text-sm font-alt font-medium min-w-32 mt-5 mx-auto transition-colors duration-200 hover:bg-accent-dark md:mt-10"
+        href={"/kontakt"}
+      >
+        Kontakt mig
+      </a>
+    </div>
+  </section>
 </Layout>
