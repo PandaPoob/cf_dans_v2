@@ -80,7 +80,7 @@ import Marker from "~/assets/icons/marker.svg";
   </section>
 
   <section
-    class="bg-primary py-10 px-4 flex flex-wrap gap-6 md:flex-row-reverse justify-center md:py-20"
+    class="bg-primary py-10 px-4 flex flex-wrap gap-6 md:flex-row-reverse justify-center md:py-32"
   >
     <div>
       <h2 class="font-display text-2xl mb-2 md:text-3xl md:text-left">
@@ -108,7 +108,7 @@ import Marker from "~/assets/icons/marker.svg";
   </section>
 
   <section
-    class="py-10 px-4 flex flex-wrap gap-10 justify-evenly md:h-[60vh] md:items-center"
+    class="py-10 px-4 flex flex-wrap gap-10 md:justify-center md:py-32 lg:gap-40"
   >
     <div>
       <h2 class="font-display text-2xl mb-5 md:mb-6 md:text-3xl md:text-left">
@@ -117,7 +117,14 @@ import Marker from "~/assets/icons/marker.svg";
       <p class="mb-2">Sådan kommer du nemt igang ved enten:</p>
       <ol class="grid gap-2">
         <li class="grid grid-cols-[14px_1fr] items-center gap-1">
-          <Marker />Tilmelding til begivenheden på Facebook
+          <Marker />
+          <span
+            >Tilmelding til begivenheden på <a
+              class="text-accent transition-all duration-100 hover:font-bold"
+              href="https://www.facebook.com/groups/808196330246330/events"
+              target="_blank">Facebook</a
+            >
+          </span>
         </li>
         <li class="grid grid-cols-[14px_1fr] items-center gap-1">
           <Marker />Tilmelding gennem besked på Messenger
@@ -151,8 +158,13 @@ import Marker from "~/assets/icons/marker.svg";
           <Marker />Betaling foregår gennem MobilePay 28 62 32 40
         </li>
         <li class="grid grid-cols-[14px_1fr] items-center gap-1">
-          <span class="mb-auto mt-2"><Marker /></span>Du finder al opdateret
-          info i vores Facebook gruppe
+          <span class="mb-auto mt-2"><Marker /></span><span
+            >Du finder al opdateret info i vores <a
+              class="text-accent transition-all duration-100 hover:font-bold"
+              href="https://www.facebook.com/groups/808196330246330"
+              target="_blank">Facebook gruppe</a
+            >
+          </span>
         </li>
         <li class="grid grid-cols-[14px_1fr] items-center gap-1">
           <span class="mb-auto mt-2"><Marker /></span>Hvis der er færre end 5
@@ -166,7 +178,8 @@ import Marker from "~/assets/icons/marker.svg";
   </section>
 
   <section
-    class="bg-primary py-10 px-4 flex flex-wrap gap-10 justify-center md:gap-20"
+    id="priser"
+    class="bg-primary py-10 px-4 flex flex-wrap gap-10 justify-center md:gap-20 md:py-32"
   >
     <div>
       <h2 class="font-display text-2xl mb-5 md:mb-6 md:text-3xl md:text-left">
@@ -190,7 +203,7 @@ import Marker from "~/assets/icons/marker.svg";
         </li>
       </ol>
 
-      <h4 class="mt-5 mb-2 text-lg">Prøvetime: 40 kr.</h4>
+      <h4 class="mt-5 mb-2 text-lg">Prøvetime: 25 kr.</h4>
       <ol class="grid gap-2">
         <li class="grid grid-cols-[14px_1fr] items-center gap-1">
           <Marker />Hvis du aldrig har danset med før
@@ -208,18 +221,22 @@ import Marker from "~/assets/icons/marker.svg";
     </div>
   </section>
 
-  <section class="py-10 px-4 text-center">
-    <h2 class="font-display text-2xl mb-5 md:text-3xl">Afmelding</h2>
-    <p>
-      Skulle du blive forhindret, skal du melde afbud senest 36 timer før via
-      SMS til 28623240.
-    </p>
-    <p>
-      Ved senere afbud eller udeblivelse opkræves et gebyr på 25 kr. via
-      MobilePay.
-    </p>
-    <h3 class="font-display text-xl mt-5">
-      Tak for at du hjælper med at få timerne til at hænge sammen for alle 🙏
-    </h3>
+  <section
+    class="py-10 px-4 text-center flex md:min-h-[70vh] md:justify-center md:items-center"
+  >
+    <div>
+      <h2 class="font-display text-2xl mb-5 md:text-3xl">Afmelding</h2>
+      <p>
+        Skulle du blive forhindret, skal du melde afbud senest 36 timer før via
+        SMS til 28623240.
+      </p>
+      <p>
+        Ved senere afbud eller udeblivelse opkræves et gebyr på 25 kr. via
+        MobilePay.
+      </p>
+      <h3 class="font-display text-xl mt-5">
+        Tak for at du hjælper med at få timerne til at hænge sammen for alle 🙏
+      </h3>
+    </div>
   </section>
 </Layout>
