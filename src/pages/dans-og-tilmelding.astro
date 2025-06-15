@@ -1,7 +1,225 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import ButtonLink from "~/components/shared/ButtonLink";
+import splash_1 from "~/assets/dans_splash.png";
+import icon_1 from "~/assets/dans_icon1.png";
+import icon_2 from "~/assets/dans_icon2.png";
+import icon_3 from "~/assets/dans_icon3.png";
+import icon_4 from "~/assets/dans_icon4.png";
+import dans_1 from "~/assets/dans_1.png";
+import dans_2 from "~/assets/dans_2.png";
+import Marker from "~/assets/icons/marker.svg";
 ---
 
 <Layout title="CF Dans - Dans & Tilmelding" location="/dans-og-tilmelding">
-  <h1>Dans & Tilmelding</h1>
+  <section class="relative h-[calc(100vh-4.5rem)] md:h-[60vh] xl:h-[72vh]">
+    <div class="h-full flex justify-center">
+      <img
+        src={splash_1.src}
+        alt="Charlotte Frølund underviser på en græsplæne med sine deltagere som danser med"
+        class="w-full h-full object-cover object-[25%_10%] md:object-[45%_60%]"
+        fetchpriority="high"
+      />
+      <div
+        class="absolute top-[30%] grid justify-items-center px-4 md:top-1/2 md:-translate-y-1/2"
+      >
+        <h1 class="font-display text-4xl text-center mb-6 md:text-4xl">
+          Dans i det fri - <br class="md:hidden" /> hver mandag 17-18
+        </h1>
+        <ButtonLink
+          client:load
+          label="Se dansetimerne"
+          url="https://www.facebook.com/groups/808196330246330/events"
+          external={true}
+        />
+      </div>
+    </div>
+  </section>
+
+  <section
+    class="flex flex-col gap-5 py-10 px-4 md:flex-row md:justify-evenly max-w-8xl mx-auto md:text-center xl:text-left"
+  >
+    <div class="flex items-center gap-5 md:flex-col xl:flex-row">
+      <img
+        src={icon_1.src}
+        alt="Lokation"
+        class="w-18 md:w-24"
+        fetchpriority="high"
+      />
+      <h3 class="font-display text-xl">
+        Kastrupfortet <br /> Skottegårdsskolen
+      </h3>
+    </div>
+    <div class="flex items-center gap-5 md:flex-col xl:flex-row">
+      <img
+        src={icon_2.src}
+        alt="Lokation"
+        class="w-18 md:w-24"
+        fetchpriority="high"
+      />
+      <h3 class="font-display text-xl">Hver mandag <br /> 17:00-18:00</h3>
+    </div>
+    <div class="flex items-center gap-5 md:flex-col xl:flex-row">
+      <img
+        src={icon_3.src}
+        alt="Lokation"
+        class="w-18 md:w-24"
+        fetchpriority="high"
+      />
+      <h3 class="font-display text-xl">75,- Drop in <br /> 40,- Klippekort</h3>
+    </div>
+    <div class="flex items-center gap-5 md:flex-col xl:flex-row">
+      <img
+        src={icon_4.src}
+        alt="Lokation"
+        class="w-18 md:w-24"
+        fetchpriority="high"
+      />
+      <h3 class="font-display text-xl">Dans i det Fri <br /> Dans dig Glad</h3>
+    </div>
+  </section>
+
+  <section
+    class="bg-primary py-10 px-4 flex flex-wrap gap-6 md:flex-row-reverse justify-center md:py-20"
+  >
+    <div>
+      <h2 class="font-display text-2xl mb-2 md:text-3xl md:text-left">
+        Dans i det Fri
+      </h2>
+      <h3 class="italic text-lg font-stretch-condensed mb-4 md:text-xl">
+        Et frirum med musik, bevægelse og fællesskab – under åben himmel.
+      </h3>
+      <p class="max-w-[74ch]">
+        En energifyldt time under åben himmel, hvor vi danser med trådløse
+        høretelefoner. På den måde kan vi give den gas til musikken uden at
+        forstyrre omgivelserne. Timens musik spænder vidt – fra de glade 50’ere
+        til nutidens hits – og dansetrinnene henter inspiration fra blandt andet
+        showdance, standard/latin, fitdance og jitterbug. Det er en sprudlende
+        blanding af stilarter, der giver sved på panden og smil på læben. Uanset
+        om du er nybegynder eller erfaren, ung eller ældre – er du hjertelig
+        velkommen. Vi danser for glædens skyld, for at få bevæget kroppen og
+        give sindet en pause. Du går herfra med fornyet energi, lethed i kroppen
+        og humøret et nøk op.
+      </p>
+    </div>
+    <div>
+      <img src={dans_1.src} alt="Trådløse høretelefoner ligger i grønt græs" />
+    </div>
+  </section>
+
+  <section
+    class="py-10 px-4 flex flex-wrap gap-10 justify-evenly md:h-[60vh] md:items-center"
+  >
+    <div>
+      <h2 class="font-display text-2xl mb-5 md:mb-6 md:text-3xl md:text-left">
+        Tilmelding
+      </h2>
+      <p class="mb-2">Sådan kommer du nemt igang ved enten:</p>
+      <ol class="grid gap-2">
+        <li class="grid grid-cols-[14px_1fr] items-center gap-1">
+          <Marker />Tilmelding til begivenheden på Facebook
+        </li>
+        <li class="grid grid-cols-[14px_1fr] items-center gap-1">
+          <Marker />Tilmelding gennem besked på Messenger
+        </li>
+        <li class="grid grid-cols-[14px_1fr] items-center gap-1">
+          <Marker />Tilmelding gennem SMS på tlf. 28623240
+        </li>
+        <li class="grid grid-cols-[14px_1fr] items-center gap-1">
+          <span class="mb-auto mt-2"><Marker /></span>Tilmelding gennem mail
+          cfdans0@gmail.com
+        </li>
+      </ol>
+      <p class="mt-5">
+        Vigtigt: <span class="font-bold"
+          >Du er først tilmeldt når betalingen er modtaget.</span
+        >
+      </p>
+    </div>
+
+    <div>
+      <h2 class="font-display text-2xl mb-5 md:mb-6 md:text-3xl md:text-left">
+        Praktisk info
+      </h2>
+      <p class="mb-2">Få styr på det vigtigste før du danser med:</p>
+      <ol class="grid gap-2">
+        <li class="grid grid-cols-[14px_1fr] items-center gap-1">
+          <span class="mb-auto mt-2"><Marker /></span>Du skal tilmelde dig
+          senest 4 dage før begivenheden
+        </li>
+        <li class="grid grid-cols-[14px_1fr] items-center gap-1">
+          <Marker />Betaling foregår gennem MobilePay 28 62 32 40
+        </li>
+        <li class="grid grid-cols-[14px_1fr] items-center gap-1">
+          <span class="mb-auto mt-2"><Marker /></span>Du finder al opdateret
+          info i vores Facebook gruppe
+        </li>
+        <li class="grid grid-cols-[14px_1fr] items-center gap-1">
+          <span class="mb-auto mt-2"><Marker /></span>Hvis der er færre end 5
+          tilmeldte senest 2 dage før, vil timen blive aflyst.
+        </li>
+      </ol>
+      <p class="ml-5">
+        Dette vil naturligvis blive meldt ud og evt. betaling refunderes
+      </p>
+    </div>
+  </section>
+
+  <section
+    class="bg-primary py-10 px-4 flex flex-wrap gap-10 justify-center md:gap-20"
+  >
+    <div>
+      <h2 class="font-display text-2xl mb-5 md:mb-6 md:text-3xl md:text-left">
+        Priser & Klippekort
+      </h2>
+
+      <h4 class="mb-5 text-lg">Drop-in: 75 kr. pr. gang</h4>
+
+      <h4 class="mb-2 text-lg">Klippekort: 400 kr. for 10 klip</h4>
+      <ol class="grid gap-2">
+        <li class="grid grid-cols-[14px_1fr] items-center gap-1">
+          <span class="mb-auto mt-2"><Marker /></span>Med klippekort betaler du
+          kun 40 kr. pr. gang.
+        </li>
+        <li class="grid grid-cols-[14px_1fr] items-center gap-1">
+          <span class="mb-auto mt-2"><Marker /></span>Klippekortet er gyldigt op
+          til 4 måneder efter køb
+        </li>
+        <li class="grid grid-cols-[14px_1fr] items-center gap-1">
+          <Marker />Udleveres til dansetimen
+        </li>
+      </ol>
+
+      <h4 class="mt-5 mb-2 text-lg">Prøvetime: 40 kr.</h4>
+      <ol class="grid gap-2">
+        <li class="grid grid-cols-[14px_1fr] items-center gap-1">
+          <Marker />Hvis du aldrig har danset med før
+        </li>
+        <li class="grid grid-cols-[14px_1fr] items-center gap-1">
+          <Marker />Tilmelding foregår på normalvis
+        </li>
+      </ol>
+
+      <p class="mt-5">MobilePay 28 62 32 40</p>
+    </div>
+
+    <div>
+      <img src={dans_2.src} alt="To CF Dans klippekort med 10 klip" />
+    </div>
+  </section>
+
+  <section class="py-10 px-4 text-center">
+    <h2 class="font-display text-2xl mb-5 md:text-3xl">Afmelding</h2>
+    <p>
+      Skulle du blive forhindret, skal du melde afbud senest 36 timer før via
+      SMS til 28623240.
+    </p>
+    <p>
+      Ved senere afbud eller udeblivelse opkræves et gebyr på 25 kr. via
+      MobilePay.
+    </p>
+    <h3 class="font-display text-xl mt-5">
+      Tak for at du hjælper med at få timerne til at hænge sammen for alle 🙏
+    </h3>
+  </section>
 </Layout>
