@@ -1,0 +1,27 @@
+---
+import "../styles/global.css";
+import "@fontsource/open-sans";
+import "@fontsource-variable/roboto";
+import "@fontsource/encode-sans-condensed";
+import ButtonLink from "~/components/shared/ButtonLink";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>404 Not Found</title>
+  </head>
+  <body class="bg-primary">
+    <main class="h-[100vh] w-[100vw] flex items-center justify-center">
+      <div class="text-center">
+        <h2 class="text-accent font-display text-5xl">404</h2>
+        <p class="text-accent text-2xl mb-4">Page not found</p>
+        <ButtonLink client:load label="Tilbage til forsiden" url="/" />
+      </div>
+    </main>
+  </body>
+</html>
