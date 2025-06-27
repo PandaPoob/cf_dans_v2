@@ -6,12 +6,15 @@ function ContactForm() {
       data-netlify="true"
       netlify-honeypot="bot-field"
     >
-      <input name="bot-field" className="hidden" />
+      <p className="hidden">
+        <label>
+          Field for bots <input name="bot-field" />
+        </label>
+      </p>
       <div>
         <label htmlFor="email">Din email </label>
         <input type="text" name="email" />
       </div>
-
       <div>
         <label htmlFor="subject">Emne </label>
         <input type="text" name="subject" />
@@ -20,7 +23,6 @@ function ContactForm() {
         <label htmlFor="bodyText">Hvad vil du gerne spørge om?</label>
         <textarea name="bodyText"></textarea>
       </div>
-
       <button type="submit">Send</button>
     </form>
   );
