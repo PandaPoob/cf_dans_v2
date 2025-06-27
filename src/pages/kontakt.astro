@@ -26,8 +26,15 @@ import splash from "~/assets/contact_splash.png";
         name="contact"
         method="POST"
         data-netlify="true"
+        netlify-honeypot="bot-field"
         onsubmit="onsubmit"
       >
+        <p class="hidden">
+          <label>
+            Field for bots
+            <input type="hidden" name="form-name" value="contact" />
+          </label>
+        </p>
         <div class="md:grid md:grid-cols-2 md:gap-6 md:mb-4">
           <div class="grid mb-5">
             <label for="email" class="text-sm mb-2">Din e-mailadresse</label>
