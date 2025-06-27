@@ -1,6 +1,12 @@
 function ContactForm() {
   return (
-    <form name="contact" method="POST" data-netlify="true">
+    <form
+      name="contact"
+      method="POST"
+      data-netlify="true"
+      data-netlify-honeypot="bot-field"
+    >
+      <input name="bot-field" className="hidden" />
       <div>
         <label htmlFor="email">Din email </label>
         <input type="text" name="email" />
