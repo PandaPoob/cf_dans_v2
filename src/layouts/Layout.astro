@@ -4,7 +4,7 @@ import "@fontsource/open-sans";
 import "@fontsource-variable/roboto";
 import "@fontsource/encode-sans-condensed";
 import { Image } from "astro:assets";
-const { title, location } = Astro.props;
+const { title, description, keywords, location } = Astro.props;
 import MobileMenu from "./MobileMenu";
 import Logo from "../../public/favicon.svg";
 import Facebook from "~/assets/icons/facebook.svg";
@@ -19,6 +19,8 @@ import Instagram from "~/assets/icons/instagram.svg";
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>{title ? title : "CF Dans"}</title>
+    {description && <meta name="description" content={description} />}
+    {keywords && <meta name="keywords" content={keywords} />}
   </head>
   <body class="text-secondary font-body">
     <header class="relative bg-primary shadow p-3">
