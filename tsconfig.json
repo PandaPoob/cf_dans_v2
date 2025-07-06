@@ -14,5 +14,5 @@
     "esModuleInterop": true
   },
   "include": [".astro/types.d.ts", "**/*", "**/*.jsx", "**/*.tsx"],
-  "exclude": ["dist", "node_modules"]
+  "exclude": ["dist", "node_modules", "astro.config.mjs"]
 }
