@@ -5,8 +5,12 @@ function MobileMenu() {
 
   return (
     <div className="md:hidden flex justify-center items-center font-alt">
-      {isOpen ? (
-        <button onClick={() => setIsOpen(!isOpen)} className="">
+      <button
+        onClick={() => setIsOpen(!isOpen)}
+        className="flex items-center"
+        aria-label={`${isOpen ? "Luk Menu" : "Åben menu"}`}
+      >
+        {isOpen ? (
           <svg
             width="18"
             height="18"
@@ -22,12 +26,7 @@ function MobileMenu() {
               strokeLinejoin="round"
             />
           </svg>
-        </button>
-      ) : (
-        <button
-          onClick={() => setIsOpen(!isOpen)}
-          className="flex items-center"
-        >
+        ) : (
           <svg
             width="20"
             height="14"
@@ -43,8 +42,9 @@ function MobileMenu() {
               strokeLinejoin="round"
             />
           </svg>
-        </button>
-      )}
+        )}
+      </button>
+
       <div
         className={`overflow-hidden absolute left-0 top-full w-screen z-10 -mt-1 bg-primary transition-all duration-300 ease-in-out ${isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"}`}
       >
