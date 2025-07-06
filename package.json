@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@astrojs/react": "^4.2.7",
+    "@astrojs/sitemap": "^3.4.1",
     "@fontsource-variable/roboto": "^5.2.5",
     "@fontsource/encode-sans": "^5.2.5",
     "@fontsource/encode-sans-condensed": "^5.2.5",

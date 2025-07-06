@@ -1,12 +1,12 @@
 ---
 import ButtonLink from "~/components/shared/ButtonLink";
-import heroBg from "~/assets/splash.png";
+import heroBg from "~/assets/splash.webp";
 ---
 
 <section class="relative h-screen md:h-[calc(100vh-4.5rem)]">
   <img
     src={heroBg.src}
-    alt="Dans dig glad"
+    alt="Udendørs dans ved Kastrupfortet på Amager med glade deltagere"
     class="w-full h-screen object-cover object-[45%_10%] md:object-[45%_60%] md:h-[calc(100vh-4.5rem)]"
     fetchpriority="high"
   />
@@ -14,10 +14,12 @@ import heroBg from "~/assets/splash.png";
     <div
       class="bg-primary/80 text-center w-full py-8 px-2 md:bg-primary/90 md:py-10"
     >
-      <h1 class="text-lg mb-2 font-display md:text-2xl">CF Dans</h1>
-      <p class="text-xl sm:text-2xl font-display md:text-4xl">
-        Danseglæde med Charlotte Frølund
-      </p>
+      <h2 class="text-lg mb-2 font-display md:text-2xl">
+        Danseglæde hos CF Dans
+      </h2>
+      <h1 class="text-xl sm:text-2xl font-display md:text-4xl">
+        Dans i det fri med Charlotte Frølund
+      </h1>
       <div class="flex justify-center mt-4">
         <ButtonLink client:load label="Dans med" url="/dans-og-tilmelding" />
       </div>

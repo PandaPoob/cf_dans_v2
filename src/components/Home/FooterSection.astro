@@ -1,26 +1,25 @@
 ---
-import heroBg from "~/assets/splash_2.png";
+import ButtonLink from "../shared/ButtonLink";
+import heroBg from "~/assets/splash_2.webp";
 ---
 
-<section class="relative h-screen">
+<section class="relative md:h-[70vh]">
   <img
     src={heroBg.src}
-    alt="Slå dig løs"
-    class="w-full h-screen object-cover object-[48%_10%] md:object-[45%_0%]"
+    alt="Charlotte Frølund løfter trådløse hovedtelefoner højt i luften"
+    class="w-full h-screen object-cover object-[48%_10%] md:object-[45%_0%] md:h-[70vh]"
   />
-  <div
-    class="absolute inset-0 flex justify-start mt-28 md:items-center md:mt-0"
-  >
-    <div class="flex flex-col items-center text-center ml-6 md:ml-50">
-      <h2 class="font-display text-5xl text-white mb-8 md:mb-10 md:text-8xl">
+  <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+    <div class="flex flex-col items-center justify-center text-center">
+      <h2 class="font-display text-5xl text-white mb-8 md:mb-10 md:text-6xl">
         Slå dig løs
       </h2>
-      <a
-        class="bg-accent text-primary flex items-center justify-center rounded-xs w-auto py-2 px-6 text-sm font-alt font-medium transition-colors duration-200 md:px-10 md:text-lg hover:bg-accent-dark"
-        href={"/dans-og-tilmelding"}
-      >
-        Dans nu
-      </a>
+
+      <ButtonLink
+        client:load
+        label="Dans i det fri"
+        url="/dans-og-tilmelding"
+      />
     </div>
   </div>
 </section>

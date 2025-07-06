@@ -1,17 +1,22 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import ButtonLink from "~/components/shared/ButtonLink";
-import splash_1 from "~/assets/dans_splash.png";
-import icon_1 from "~/assets/dans_icon1.png";
-import icon_2 from "~/assets/dans_icon2.png";
-import icon_3 from "~/assets/dans_icon3.png";
-import icon_4 from "~/assets/dans_icon4.png";
-import dans_1 from "~/assets/dans_1.png";
+import splash_1 from "~/assets/dans_splash.webp";
+import icon_1 from "~/assets/dans_icon1.svg";
+import icon_2 from "~/assets/dans_icon2.svg";
+import icon_3 from "~/assets/dans_icon3.svg";
+import icon_4 from "~/assets/dans_icon4.svg";
+import dans_1 from "~/assets/dans_1.webp";
 import dans_2 from "~/assets/dans_2.png";
 import Marker from "~/assets/icons/marker.svg";
 ---
 
-<Layout title="CF Dans - Dans & Tilmelding" location="/dans-og-tilmelding">
+<Layout
+  title="CF Dans | Tilmelding & Udendørs dansetimer på Amager"
+  description="Energi, bevægelse og glæde med dans i det fri – hver mandag på Amager. Drop-in timer, klippekort og prøvetime for kun 25 kr. Tilmeld dig online."
+  keywords="udendørs dans Amager, dansetimer i det fri, drop-in dans København, dans for voksne Amager, prøvetime dans, dansefællesskab i det fri"
+  location="/dans-og-tilmelding"
+>
   <section class="relative h-[calc(100vh-4.5rem)] md:h-[60vh] xl:h-[72vh]">
     <div class="h-full flex justify-center">
       <img
@@ -24,7 +29,7 @@ import Marker from "~/assets/icons/marker.svg";
         class="absolute top-[30%] grid justify-items-center px-4 md:top-1/2 md:-translate-y-1/2"
       >
         <h1 class="font-display text-4xl text-center mb-6 md:text-4xl">
-          Dans i det fri - <br class="md:hidden" /> hver mandag 17-18
+          Udendørs dans på Amager - <br class="md:hidden" /> hver mandag 17-18
         </h1>
         <ButtonLink
           client:load
@@ -42,7 +47,7 @@ import Marker from "~/assets/icons/marker.svg";
     <div class="flex items-center gap-5 md:flex-col xl:flex-row">
       <img
         src={icon_1.src}
-        alt="Lokation"
+        alt="Ikon: Pin lokation"
         class="w-18 md:w-24"
         fetchpriority="high"
       />
@@ -53,7 +58,7 @@ import Marker from "~/assets/icons/marker.svg";
     <div class="flex items-center gap-5 md:flex-col xl:flex-row">
       <img
         src={icon_2.src}
-        alt="Lokation"
+        alt="Ikon: Kalender og ur indikerer tidspunkt"
         class="w-18 md:w-24"
         fetchpriority="high"
       />
@@ -62,7 +67,7 @@ import Marker from "~/assets/icons/marker.svg";
     <div class="flex items-center gap-5 md:flex-col xl:flex-row">
       <img
         src={icon_3.src}
-        alt="Lokation"
+        alt="Ikon: Prisskilt"
         class="w-18 md:w-24"
         fetchpriority="high"
       />
@@ -71,7 +76,7 @@ import Marker from "~/assets/icons/marker.svg";
     <div class="flex items-center gap-5 md:flex-col xl:flex-row">
       <img
         src={icon_4.src}
-        alt="Lokation"
+        alt="Ikon: Person der danser"
         class="w-18 md:w-24"
         fetchpriority="high"
       />
@@ -90,7 +95,7 @@ import Marker from "~/assets/icons/marker.svg";
         Et frirum med musik, bevægelse og fællesskab – under åben himmel.
       </h3>
       <p class="max-w-[74ch]">
-        En energifyldt time under åben himmel, hvor vi danser med trådløse
+        En energifyldt udendørs dansetime på Amager, hvor vi danser med trådløse
         høretelefoner. På den måde kan vi give den gas til musikken uden at
         forstyrre omgivelserne. Timens musik spænder vidt – fra de glade 50’ere
         til nutidens hits – og dansetrinnene henter inspiration fra blandt andet

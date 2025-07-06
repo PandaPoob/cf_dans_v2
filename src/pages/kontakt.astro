@@ -1,14 +1,20 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import splash from "~/assets/contact_splash.png";
+import splash from "~/assets/contact_splash.webp";
 ---
 
-<Layout title="CF Dans - Kontakt" location="/kontakt">
+<Layout
+  title="CF Dans | Kontakt og booking"
+  description="Har du spørgsmål til dans i det fri, tilmelding eller events? Kontakt CF Dans – jeg vender hurtigt tilbage."
+  keywords="kontakt CF Dans, book CF Dans, tilmelding dans, spørgsmål til dans ved Kastrupfortet, Amager dans, dans på amager"
+  location="/kontakt"
+>
   <section class="relative h-[40vh] md:h-[60vh]">
     <img
       src={splash.src}
       alt="Kontakt CF Dans"
       class="w-full h-[40vh] object-cover object-[50%_80%] md:h-[60vh] md:object-[45%_60%]"
+      fetchpriority="high"
     />
     <h1
       class="absolute bottom-1/2 text-center text-2xl font-display md:text-4xl md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2"

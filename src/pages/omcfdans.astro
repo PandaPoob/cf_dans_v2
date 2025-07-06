@@ -1,13 +1,18 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import about_1 from "~/assets/about_1.png";
-import about_2 from "~/assets/about_2.png";
-import about_3 from "~/assets/about_3.png";
-import about_4 from "~/assets/about_4.png";
-import about_5 from "~/assets/about_5.png";
+import about_1 from "~/assets/about_1.webp";
+import about_2 from "~/assets/about_2.webp";
+import about_3 from "~/assets/about_3.webp";
+import about_4 from "~/assets/about_4.webp";
+import about_5 from "~/assets/about_5.webp";
 ---
 
-<Layout title="CF Dans - Om CF Dans" location="/omcfdans">
+<Layout
+  title="Om CF Dans | Mød Charlotte Frølund"
+  description="Mød Charlotte Frølund – danseinstruktør med 30+ års erfaring og stifter af CF Dans. Læs om hendes rejse med dans, undervisning og bevægelsesglæde i Kastrup."
+  keywords="Charlotte Frølund, danseinstruktør Kastrup, danseinstruktør Amager"
+  location="/omcfdans"
+>
   <section
     class="flex justify-center items-center flex-wrap gap-8 px-4 py-16 md:min-h-screen md:-mt-10"
   >
@@ -29,6 +34,7 @@ import about_5 from "~/assets/about_5.png";
       <img
         src={about_1.src}
         alt="Charlotte Frølund danser udenfor på en grøn græsplæne på en solrig dag."
+        fetchpriority="high"
       />
     </div>
   </section>
@@ -140,7 +146,7 @@ import about_5 from "~/assets/about_5.png";
       <p class="mb-6">
         Uanset om du er nybegynder eller har danset før, er der plads til dig
         her. Mine timer er fyldt med energi, musik og masser af bevægelsesglæde.
-        Kom og mærk hvad dans kan gøre for både krop og sind.
+        Vi danser udendørs på Amager, f.eks. ved Kastrupfortet.
       </p>
       <a
         class="text-accent flex items-center justify-center rounded-xs w-auto py-2 px-6 text-sm font-alt font-medium border border-accent min-w-32 transition-colors duration-200 hover:bg-accent hover:text-white"

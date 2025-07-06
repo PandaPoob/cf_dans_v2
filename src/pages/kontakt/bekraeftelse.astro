@@ -1,6 +1,6 @@
 ---
 import Layout from "~/layouts/Layout.astro";
-import splash from "~/assets/contact_splash.png";
+import splash from "~/assets/contact_splash.webp";
 ---
 
 <Layout title="CF Dans - Kontakt" location="/kontakt">
@@ -9,6 +9,7 @@ import splash from "~/assets/contact_splash.png";
       src={splash.src}
       alt="Kontakt CF Dans"
       class="w-full h-[80vh] object-cover object-[50%_80%] md:object-[60%_60%]"
+      fetchpriority="high"
     />
     <div
       class="absolute bottom-1/2 text-center md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2"
