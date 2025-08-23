@@ -7,7 +7,7 @@ export default defineConfig({
   devToolbar: {
     enabled: false,
   },
-  site: "https://cf-dans-v2.netlify.app/", //TODO - switch out to actual domain
+  site: "https://cfdans.dk/",
   integrations: [react(), sitemap()],
   vite: {
     plugins: [tailwindcss()],
