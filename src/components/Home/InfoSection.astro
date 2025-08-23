@@ -5,15 +5,17 @@ import Group from "~/assets/icons/group.svg";
 import Sprout from "~/assets/icons/sprout.svg";
 ---
 
-<section class="flex flex-col items-center justify-center py-20 px-4 md:py-32">
-  <h2
-    class="font-display text-2xl text-center mb-10 md:mb-14 md:text-3xl"
-    data-aos="fade-left"
-  >
+<section
+  class="flex flex-col items-center justify-center py-20 px-4 md:py-32"
+  data-aos="fade-in"
+  data-aos-easing="ease-out-back"
+  data-aos-offset={300}
+>
+  <h2 class="font-display text-2xl text-center mb-10 md:mb-14 md:text-3xl">
     Ikke "bare" dans
   </h2>
   <div class="grid gap-10 md:grid-cols-[1fr_1fr]">
-    <div class="max-w-xl" data-aos="fade-left">
+    <div class="max-w-xl">
       <div class="flex items-center gap-3 mb-4">
         <Headphones />
         <h3 class="text-lg">Befrielse</h3>
@@ -26,7 +28,7 @@ import Sprout from "~/assets/icons/sprout.svg";
         omgivelser.
       </p>
     </div>
-    <div class="max-w-xl" data-aos="fade-left">
+    <div class="max-w-xl">
       <div class="flex items-center gap-3 mb-4">
         <Music />
         <h3 class="text-lg">Passion</h3>
@@ -39,7 +41,7 @@ import Sprout from "~/assets/icons/sprout.svg";
         smitte af.
       </p>
     </div>
-    <div class="max-w-xl" data-aos="fade-left" data-aos-delay="200">
+    <div class="max-w-xl">
       <div class="flex items-center gap-3 mb-4">
         <Group />
         <h3 class="text-lg">Omfavnende</h3>
@@ -52,7 +54,7 @@ import Sprout from "~/assets/icons/sprout.svg";
         selv plads.
       </p>
     </div>
-    <div class="max-w-xl" data-aos="fade-left" data-aos-delay="200">
+    <div class="max-w-xl">
       <div class="flex items-center gap-3 mb-3">
         <Sprout />
         <h3 class="text-lg">Styrke</h3>
