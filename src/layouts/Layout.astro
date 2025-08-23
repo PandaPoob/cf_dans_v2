@@ -5,7 +5,7 @@ import "@fontsource-variable/roboto";
 import "@fontsource/encode-sans-condensed";
 import { Image } from "astro:assets";
 const { title, description, keywords, location } = Astro.props;
-import MobileMenu from "./MobileMenu";
+import Navigation from "./Navigation";
 import Logo from "../../public/favicon.svg";
 import Facebook from "~/assets/icons/facebook.svg";
 import Instagram from "~/assets/icons/instagram.svg";
@@ -32,41 +32,8 @@ import AOSInit from "~/components/shared/AOSInit";
     />
   </head>
   <body class="text-secondary font-body overflow-x-hidden">
-    <header class="relative bg-primary shadow p-3">
-      <nav class="w-full flex justify-between items-center">
-        <a href="/" class="w-8"><Image src={Logo} alt="logo" /></a>
-        <ul class="gap-12 py-2 items-center hidden md:flex font-alt">
-          <li>
-            <a
-              href="/dans-og-tilmelding"
-              class={`${location === "/dans-og-tilmelding" && "underline underline-offset-2"} `}
-              >Dans & Tilmelding</a
-            >
-          </li>
-          <li>
-            <a
-              href="/eventbooking"
-              class={`${location === "/eventbooking" && "underline underline-offset-2"} `}
-              >Event booking</a
-            >
-          </li>
-          <li>
-            <a
-              href="/omcfdans"
-              class={`${location === "/omcfdans" && "underline underline-offset-2"} `}
-              >Om CF Dans</a
-            >
-          </li>
-          <li>
-            <a
-              href="/kontakt"
-              class={`${location === "/kontakt" && "underline underline-offset-2"} `}
-              >Kontakt mig</a
-            >
-          </li>
-        </ul>
-        <MobileMenu client:load />
-      </nav>
+    <header class="relative">
+      <Navigation location={location} client:load />
     </header>
     <main>
       <AOSInit client:load />
