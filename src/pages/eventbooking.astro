@@ -19,7 +19,12 @@ import event_splash_2 from "~/assets/event_splash_2.webp";
         class="w-full h-full object-cover object-[30%_10%] md:object-[45%_60%]"
         fetchpriority="high"
       />
-      <div class="absolute top-[30%] px-4">
+      <div
+        class="absolute top-[30%] px-4"
+        data-aos="fade-in"
+        data-aos-easing="ease-out-back"
+        data-aos-delay="100"
+      >
         <h1 class="font-display text-4xl mb-4">
           Book danseoplevelser til dit næste event
         </h1>
@@ -67,7 +72,7 @@ import event_splash_2 from "~/assets/event_splash_2.webp";
   <section
     class="bg-primary px-4 py-16 md:flex md:flex-row-reverse md:gap-10 md:justify-center md:py-40"
   >
-    <div>
+    <div data-aos="fade-in" data-aos-easing="ease-out-back">
       <h2 class="font-display text-2xl mb-5 md:mb-6 md:text-3xl md:text-left">
         Undervisning i brudevals
       </h2>
@@ -85,10 +90,16 @@ import event_splash_2 from "~/assets/event_splash_2.webp";
     <img
       src={event_1.src}
       alt="Et brudepar som danser tæt med hinanden i armene."
+      data-aos="fade-in"
+      data-aos-easing="ease-out-back"
     />
   </section>
 
-  <section class="px-4 py-16 md:py-40 md:grid md:justify-center">
+  <section
+    class="px-4 py-16 md:py-40 md:grid md:justify-center"
+    data-aos="fade-in"
+    data-aos-easing="ease-out-back"
+  >
     <h2 class="font-display text-2xl mb-5 md:mb-6 md:text-3xl md:text-left">
       Polterabend med et uforglemmeligt dansetwist
     </h2>
@@ -108,7 +119,7 @@ import event_splash_2 from "~/assets/event_splash_2.webp";
   <section
     class="bg-primary px-4 py-16 flex flex-wrap gap-10 md:py-40 md:justify-evenly"
   >
-    <div class="">
+    <div data-aos="fade-in" data-aos-easing="ease-out-back">
       <h2 class="font-display text-2xl mb-5 md:mb-6 md:text-3xl md:text-left">
         Få alle op af stolen til firmafesten
       </h2>
@@ -122,7 +133,7 @@ import event_splash_2 from "~/assets/event_splash_2.webp";
       </p>
     </div>
 
-    <div class="">
+    <div data-aos="fade-in" data-aos-easing="ease-out-back">
       <h2 class="font-display text-2xl mb-5 md:mb-6 md:text-3xl md:text-left">
         Få festen i gang med dans
       </h2>
@@ -147,22 +158,29 @@ import event_splash_2 from "~/assets/event_splash_2.webp";
     <div
       class="absolute top-0 h-full flex flex-col justify-center px-4 md:w-full md:items-center"
     >
-      <h2 class="font-display text-2xl mb-5 md:mb-6 md:text-3xl text-left">
-        Skab minder, der danser med tiden
-      </h2>
-      <p class="max-w-[74ch]">
-        Har du et arrangement, som ikke er nævnt ovenfor, men hvor du godt kan
-        forestille dig, at min danseundervisning kunne gøre en forskel? Uanset
-        om I er øvede dansere eller bare vil have det sjovt, skaber jeg en tryg
-        og festlig ramme, hvor alle kan være med. Hvis du vil gøre din
-        begivenhed helt særlig, så tøv ikke med at kontakte mig her.
-      </p>
-      <a
-        class="bg-accent text-primary flex items-center justify-center rounded-xs w-auto py-2 px-6 text-sm font-alt font-medium min-w-32 mt-5 mx-auto transition-colors duration-200 hover:bg-accent-dark md:mt-10"
-        href={"/kontakt"}
+      <div
+        class="flex flex-col mx-auto"
+        data-aos="fade-in"
+        data-aos-easing="ease-out-back"
+        data-aos-duration="1000"
       >
-        Book din danseoplevelse
-      </a>
+        <h2 class="font-display text-2xl mb-5 md:mb-6 md:text-3xl text-center">
+          Skab minder, der danser med tiden
+        </h2>
+        <p class="max-w-[74ch]">
+          Har du et arrangement, som ikke er nævnt ovenfor, men hvor du godt kan
+          forestille dig, at min danseundervisning kunne gøre en forskel? Uanset
+          om I er øvede dansere eller bare vil have det sjovt, skaber jeg en
+          tryg og festlig ramme, hvor alle kan være med. Hvis du vil gøre din
+          begivenhed helt særlig, så tøv ikke med at kontakte mig her.
+        </p>
+        <a
+          class="bg-accent text-primary flex items-center justify-center rounded-xs w-auto py-2 px-6 text-sm font-alt font-medium min-w-32 mt-5 mx-auto transition-colors duration-200 hover:bg-accent-dark md:mt-10"
+          href={"/kontakt"}
+        >
+          Book din danseoplevelse
+        </a>
+      </div>
     </div>
   </section>
 </Layout>
