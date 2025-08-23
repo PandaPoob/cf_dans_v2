@@ -48,18 +48,26 @@ function MobileMenu() {
       <div
         className={`overflow-hidden absolute left-0 top-full w-screen z-10 -mt-1 bg-primary transition-all duration-300 ease-in-out ${isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"}`}
       >
-        <ul className="grid justify-center text-center gap-5 py-5">
+        <ul className="grid justify-center text-center gap-8 py-5">
           <li>
-            <a href="/dans-og-tilmelding">Dans & Tilmelding</a>
+            <a href="/dans-og-tilmelding" className="text-lg">
+              Dans & Tilmelding
+            </a>
           </li>
           <li>
-            <a href="/eventbooking">Event booking</a>
+            <a href="/eventbooking" className="text-lg">
+              Event booking
+            </a>
           </li>
           <li>
-            <a href="/omcfdans">Om CF Dans</a>
+            <a href="/omcfdans" className="text-lg">
+              Om CF Dans
+            </a>
           </li>
           <li>
-            <a href="/kontakt">Kontakt mig</a>
+            <a href="/kontakt" className="text-lg">
+              Kontakt mig
+            </a>
           </li>
         </ul>
       </div>
