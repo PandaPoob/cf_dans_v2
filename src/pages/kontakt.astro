@@ -3,6 +3,16 @@ import Layout from "../layouts/Layout.astro";
 import splash from "~/assets/contact_splash.webp";
 ---
 
+<head>
+  <link
+    rel="preload"
+    as="image"
+    href={splash.src}
+    fetchpriority="high"
+    type="image/webp"
+  />
+</head>
+
 <Layout
   title="CF Dans | Kontakt og booking"
   description="Har du spørgsmål til dans i det fri, tilmelding eller events? Kontakt CF Dans – jeg vender hurtigt tilbage."

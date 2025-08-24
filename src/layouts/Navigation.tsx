@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import Logo from "../../public/favicon.svg";
 import MobileMenu from "./MobileMenu";
 
 function Navigation({ location }: { location: string }) {
@@ -40,7 +39,7 @@ function Navigation({ location }: { location: string }) {
     >
       <div className="flex justify-between items-center">
         <a href="/" className="w-8">
-          <img src={Logo.src} alt="logo" />
+          <img src={"/favicon.svg"} alt="logo" />
         </a>
         <ul className="gap-12 py-2 items-center hidden md:flex font-alt">
           <li>

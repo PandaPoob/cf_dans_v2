@@ -6,6 +6,16 @@ import event_1 from "~/assets/event_1.webp";
 import event_splash_2 from "~/assets/event_splash_2.webp";
 ---
 
+<head>
+  <link
+    rel="preload"
+    as="image"
+    href={splash_1.src}
+    fetchpriority="high"
+    type="image/webp"
+  />
+</head>
+
 <Layout
   title="CF Dans | Dans til events & fester"
   description="Book brudevals, polterabend eller firmafest med dans. Skræddersyede danseoplevelser i København og omegn – for både begyndere og øvede."
