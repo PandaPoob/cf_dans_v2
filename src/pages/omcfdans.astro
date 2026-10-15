@@ -7,22 +7,21 @@ import about_4 from "~/assets/about_4.webp";
 import about_5 from "~/assets/about_5.webp";
 ---
 
-<head>
-  <link
-    rel="preload"
-    as="image"
-    href={about_1.src}
-    fetchpriority="high"
-    type="image/webp"
-  />
-</head>
-
 <Layout
   title="Om CF Dans | Mød Charlotte Frølund"
   description="Mød Charlotte Frølund – danseinstruktør med 30+ års erfaring og stifter af CF Dans. Læs om hendes rejse med dans, undervisning og bevægelsesglæde i Kastrup."
   keywords="Charlotte Frølund, danseinstruktør Kastrup, danseinstruktør Amager"
   location="/omcfdans"
 >
+  <link
+    slot="head"
+    rel="preload"
+    as="image"
+    href={about_1.src}
+    fetchpriority="high"
+    type="image/webp"
+  />
+
   <section
     class="flex justify-center items-center flex-wrap gap-8 px-4 py-16 md:min-h-screen md:-mt-10"
   >
