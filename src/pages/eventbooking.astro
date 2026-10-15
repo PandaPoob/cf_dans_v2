@@ -1,20 +1,9 @@
 ---
-import { Image } from "astro:assets";
 import Layout from "../layouts/Layout.astro";
 import splash_1 from "~/assets/event_splash.webp";
 import event_1 from "~/assets/event_1.webp";
 import event_splash_2 from "~/assets/event_splash_2.webp";
 ---
-
-<head>
-  <link
-    rel="preload"
-    as="image"
-    href={splash_1.src}
-    fetchpriority="high"
-    type="image/webp"
-  />
-</head>
 
 <Layout
   title="CF Dans | Dans til events & fester"
@@ -22,6 +11,14 @@ import event_splash_2 from "~/assets/event_splash_2.webp";
   keywords="Brudevals undervisning, brudevals, firmafest dans"
   location="/eventbooking"
 >
+  <link
+    slot="head"
+    rel="preload"
+    as="image"
+    href={splash_1.src}
+    fetchpriority="high"
+    type="image/webp"
+  />
   <section class="relative h-[calc(100vh-4.5rem)] md:h-[76vh]">
     <div class="h-[88%] flex justify-center">
       <img
